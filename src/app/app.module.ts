@@ -9,6 +9,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { EnquiryComponent } from './pages/enquiry/enquiry.component';
 import { GymwebComponent } from './gymweb/gymweb.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GymwebComponent } from './gymweb/gymweb.component';
     GymwebComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
