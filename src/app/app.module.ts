@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { EnquiryComponent } from './pages/enquiry/enquiry.component';
 import { GymwebComponent } from './gymweb/gymweb.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     AboutComponent,
     ContactComponent,
     EnquiryComponent,
-    GymwebComponent
+    GymwebComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
