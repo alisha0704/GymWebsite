@@ -1,3 +1,34 @@
-<section>
-<p>enquiry works!</p>
-</section>
+<body class="min-h-screen flex justify-center items-center" style="background-image: url('/assets/inquirybg.png'); background-blend-mode: lighten; background-size: cover; background-repeat: no-repeat;">
+    <div class="bg-orange-200 p-8 rounded-lg shadow-md max-w-3xl pr-14">
+        <h1 class="text-2xl font-bold font-serif mb-4">YOUR INQUIRIES, OUR INSIGHTS!</h1>
+        <div class="flex">
+        <form id="contactForm" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="name" class="text-sm text-semibold font-mono text-gray-800">Name*</label>
+                <input type="text" id="name" name="name" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="flex flex-col">
+                <label for="phone" class="text-sm  text-semibold font-mono text-gray-800">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="flex flex-col">
+                <label for="email" class="text-sm  text-semibold font-mono text-gray-1=800">Email ID*</label>
+                <input type="email" id="email" name="email" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="flex flex-col">
+                <label for="question" class="text-sm  text-semibold font-mono text-gray-800">Question for Us*</label>
+                <textarea id="question" name="question" rows="4" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500"></textarea>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-900 text-white py-3 px-7 font-mono rounded-full hover:bg-blue-400 focus:outline-none focus:bg-blue-500">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <div class="w-3/4 flex justify-center items-center">
+            <img src="/assets/gyminquiry.png" alt="Image" class="w-auto h-full">
+        </div>
+    </div>
+</div>
+    
+</body>
