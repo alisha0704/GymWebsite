@@ -3,22 +3,22 @@
     <div class="backdrop-blur-lg  hover:scale-110 transition duration-500 transform p-8 rounded-lg shadow-md max-w-3xl pr-14">
         <h1 class="text-2xl font-extrabold text-gray-100 font-serif mb-4">LET'S GROW TOGETHER!</h1>
         <div class="flex">
-        <form (submit)="submitForm()" id="contactForm" class="space-y-4">
+        <form id="contactForm" class="space-y-4">
             <div class="flex flex-col">
                 <label for="name" class="text-sm text-bold font-mono text-gray-200">Name*</label>
-                <input type="text" id="name" name="name" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
+                <input type="text" id="name" placeholder="Enter your name" name="name" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
             </div>
             <div class="flex flex-col">
                 <label for="phone" class="text-sm  text-bold font-mono text-gray-200">Phone Number*</label>
-                <input type="tel" id="phone" name="phone" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
             </div>
             <div class="flex flex-col">
                 <label for="email" class="text-sm  text-bold font-mono text-gray-200">Email ID*</label>
-                <input type="email" id="email" name="email" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email id" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
             </div>
             <div class="flex flex-col">
                 <label for="program" class="text-sm text-bold font-mono text-gray-200">Programme*</label>
-                <select id="program" name="program" class="border rounded-lg font-serif text-sm bg-neutral-100 px-3 py-2 focus:outline-none focus:border-blue-500" required>
+                <select id="program" name="program" placeholder="Choose an Option " class="border rounded-lg font-serif text-sm bg-neutral-100 px-3 py-2 focus:outline-none focus:border-blue-500" required>
                     <option value="option1">Cardio Training</option>
                     <option value="option2">Weight Training</option>
                     <option value="option3">Functional Training</option>

@@ -1,16 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent {
-  formData: any = {};
 
-  submitForm() {
-    // Send the form data to the backend for email processing.
-    // You can use Angular HttpClient to send a POST request to your server.
-    // Handle the email sending logic on the server-side.
+export class RegisterComponent implements OnInit {
+  
+
+  fb=inject(FormBuilder);
+   
+
+  registerForm !: FormGroup;
+   
+  ngOnInit(): void {
+    this.registerForm = this.fb.group({
+      Name: ['', Validators.required],
+      Phone: ['', Validators.required],
+      Email: ['', Validators.required],
+      Programme: ['', Validators.required],
+
+    });
+    throw new Error('Method not implemented.');
   }
+
+ 
 }
