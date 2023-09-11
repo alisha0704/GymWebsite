@@ -1,9 +1,9 @@
 <div id="#register" #register>
 <div  class="min-h-screen flex max-md:flex-col justify-center items-center" style="background-image: url('/assets/registerbg.png'); background-blend-mode: lighten; background-size: cover; background-repeat: no-repeat;">
-    <div class="backdrop-blur-lg  hover:scale-110 transition duration-500 transform p-8 rounded-lg shadow-md max-w-3xl pr-14">
+    <div class="backdrop-blur-lg  hover:scale-105 transition duration-500 transform p-8 rounded-lg shadow-md max-w-3xl pr-14">
         <h1 class="text-2xl font-extrabold text-gray-100 font-serif mb-4">LET'S GROW TOGETHER!</h1>
         <div class="flex">
-        <form id="contactForm" class="space-y-4">
+        <form action="https://formspree.io/f/xwkdbgjb" method="POST" class="space-y-4">
             <div class="flex flex-col">
                 <label for="name" class="text-sm text-bold font-mono text-gray-200">Name*</label>
                 <input type="text" id="name" placeholder="Enter your name" name="name" class="border rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500" required>
@@ -19,15 +19,15 @@
             <div class="flex flex-col">
                 <label for="program" class="text-sm text-bold font-mono text-gray-200">Programme*</label>
                 <select id="program" name="program" placeholder="Choose an Option " class="border rounded-lg font-serif text-sm bg-neutral-100 px-3 py-2 focus:outline-none focus:border-blue-500" required>
-                    <option value="option1">Cardio Training</option>
-                    <option value="option2">Weight Training</option>
-                    <option value="option3">Functional Training</option>
-                    <option value="option3">Boxing and Martial Arts</option>
-                    <option value="option3">Balance Training</option>
-                    <option value="option3">Pilates</option>
-                    <option value="option3">Stretching and flexibility</option>
-                    <option value="option3">Agility Training</option>
-                    <option value="option3">Circuit Training</option>
+                    <option value="cardio">Cardio Training</option>
+                    <option value="weight">Weight Training</option>
+                    <option value="functional">Functional Training</option>
+                    <option value="boxing">Boxing and Martial Arts</option>
+                    <option value="balance">Balance Training</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="flexibility">Stretching and flexibility</option>
+                    <option value="agility">Agility Training</option>
+                    <option value="circuit">Circuit Training</option>
                 </select>
             </div>
             

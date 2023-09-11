@@ -7,7 +7,6 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-
 export class RegisterComponent implements OnInit {
   
 
@@ -21,7 +20,7 @@ export class RegisterComponent implements OnInit {
       Name: ['', Validators.required],
       Phone: ['', Validators.required],
       Email: ['', Validators.required],
-      Programme: ['', Validators.required],
+      Training: ['', Validators.required],
 
     });
     throw new Error('Method not implemented.');
