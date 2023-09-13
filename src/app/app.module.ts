@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
@@ -13,7 +13,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { NgxUiLoaderHttpModule } from 'ngx-ui-loader';
 import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.component';
-
+// import { PrimeNGConfig } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.com
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NgxUiLoaderModule,
     NgxUiLoaderHttpModule.forRoot({
@@ -39,4 +40,15 @@ import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.com
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  // constructor(private primengConfig: PrimeNGConfig) {}
+
+  //   ngOnInit() {
+  //       this.primengConfig.zIndex = {
+  //           modal: 1100,    
+  //           overlay: 1000, 
+  //           menu: 1000,     
+  //           tooltip: 1100   
+  //       };
+  //   }
+}
