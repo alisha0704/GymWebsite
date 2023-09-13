@@ -1,0 +1,18 @@
+.animate-blink {
+    animation: blink 3s alternate infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    40% {
+        opacity: 0;
+      }
+    80% {
+        opacity: 1;
+      }
+    100% {
+      opacity: 0;
+    }
+  }

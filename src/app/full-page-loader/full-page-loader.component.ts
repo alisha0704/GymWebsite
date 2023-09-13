@@ -13,11 +13,11 @@ export class FullPageLoaderComponent implements OnInit {
   ngOnInit() {
     const interval = setInterval(() => {
       if (this.filled < 100) {
-        this.filled += 4; 
+        this.filled += 2; 
       } else {
         clearInterval(interval); 
         this.loading = false; 
       }
-    }, 20); 
+    }, 70); 
   }
 }

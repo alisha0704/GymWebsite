@@ -13,6 +13,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
 import { NgxUiLoaderHttpModule } from 'ngx-ui-loader';
 import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+// import { CarouselComponent } from './carousel/carousel.component';
 // import { PrimeNGConfig } from 'primeng/api';
 
 @NgModule({
@@ -26,6 +28,7 @@ import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.com
     EnquiryComponent,
     RegisterComponent,
     FullPageLoaderComponent,
+   
     
   ],
   imports: [
@@ -33,6 +36,7 @@ import { FullPageLoaderComponent } from './full-page-loader/full-page-loader.com
     BrowserAnimationsModule,
     AppRoutingModule,
     NgxUiLoaderModule,
+    SlickCarouselModule,
     NgxUiLoaderHttpModule.forRoot({
       showForeground: true,
     }),
