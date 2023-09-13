@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./enquiry.component.css']
 })
 export class EnquiryComponent {
+  loading = true; 
 
+  ngOnInit() {
+    
+    setTimeout(() => {
+      
+      this.loading = false;
+    }, 5000); 
+  }
 }

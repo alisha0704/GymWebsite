@@ -8,23 +8,14 @@ import { FormBuilder,FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  
+  loading = true; 
 
-  fb=inject(FormBuilder);
-   
-
-  registerForm !: FormGroup;
-   
-  ngOnInit(): void {
-    this.registerForm = this.fb.group({
-      Name: ['', Validators.required],
-      Phone: ['', Validators.required],
-      Email: ['', Validators.required],
-      Training: ['', Validators.required],
-
-    });
-    throw new Error('Method not implemented.');
+  ngOnInit() {
+    
+    setTimeout(() => {
+      
+      this.loading = false;
+    }, 5000); 
   }
-
  
 }

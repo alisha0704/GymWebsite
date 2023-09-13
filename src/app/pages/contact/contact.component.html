@@ -1,4 +1,7 @@
-<div id="#contact" #about class="flex items-center justify-center h-screen" style="background-image: url('/assets/contactfinalbg.png'); background-blend-mode: lighten; background-size: cover; background-repeat: no-repeat;">
+<div id="#contact">
+    <app-full-page-loader [loading]="loading"></app-full-page-loader>
+    <div class="flex items-center justify-center h-screen" style="background-image: url('/assets/contactfinalbg.png'); background-blend-mode: lighten; background-size: cover; background-repeat: no-repeat;">
+    
     <div class=" p-8 w-1/2 items-start rounded-lg shadow-2xl border-2 border-black
     hover:scale-110 transition duration-500 backdrop-blur-lg">
         <h1 class="text-3xl font-extrabold text-gray-300 text-center font-serif mb-6">Get In Touch!</h1>
@@ -21,5 +24,6 @@
             <img src="/assets/call.png" alt="CONTACT US" class="w-full h-auto" >
         </div>
     </div>
+</div>
 </div>
 </div>
